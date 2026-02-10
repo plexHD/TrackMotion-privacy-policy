@@ -100,7 +100,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: January 28, 2026</p>
+        <p class="last-updated">Last updated: February 10, 2026</p>
         
         <h2>1. Introduction</h2>
         <p>
@@ -108,13 +108,13 @@
             information when you use our mobile application TrackMotion (the "App").
         </p>
         <p>
-            TrackMotion is developed and maintained by <strong>Moritz Ramge</strong>, 
+            TrackMotion is developed and maintained by <strong>[Your Name / Company Name]</strong>, 
             the developer listed on the Google Play Store.
         </p>
         
         <h2>2. Data Collection</h2>
         <div class="highlight">
-            <strong>We do not collect any personal or sensitive user data.</strong>
+            <strong>We do not collect any personal or sensitive user data for marketing, analytics, or advertising purposes.</strong>
         </div>
         <p>
             TrackMotion is designed with your privacy in mind. All data you enter into the app, including:
@@ -125,77 +125,107 @@
             <li>App preferences and settings (such as weight units, language, and default values)</li>
         </ul>
         <p>
-            is stored <strong>locally on your device only</strong>. This data never leaves your device and is not 
-            transmitted to any external servers, cloud services, or third parties.
+            is stored <strong>locally on your device</strong> by default. This data never leaves your device unless 
+            you choose to enable the optional Cloud Sync feature.
         </p>
         
-        <h2>3. Data Storage</h2>
+        <h2>3. Cloud Sync (Optional)</h2>
         <p>
-            All app data is stored using your device's local storage system. This means:
+            TrackMotion offers an <strong>optional</strong> Cloud Sync feature that allows you to back up your data 
+            and sync it across multiple devices. This feature is entirely opt-in and requires you to sign in with a Google account or an email and password.
+        </p>
+        <p>
+            If you enable Cloud Sync, the following data is stored securely in Google Cloud Firestore:
         </p>
         <ul>
-            <li>Your data remains on your device at all times</li>
-            <li>We cannot access, view, or retrieve your data</li>
-            <li>Your data is as secure as your device itself</li>
-            <li>Uninstalling the app will permanently delete all associated data</li>
+            <li>Your workout records and exercise logs</li>
+            <li>Your fitness statistics</li>
+            <li>Your app settings and preferences</li>
+        </ul>
+        <p>
+            This data is associated with your account and is accessible only to you. We do not access, analyse, 
+            or share your synced data. You can disable Cloud Sync or delete your cloud data at any time from within the app.
+        </p>
+
+        <h2>4. Authentication</h2>
+        <p>
+            If you choose to use Cloud Sync, you will need to sign in using one of the following methods:
+        </p>
+        <ul>
+            <li><strong>Google Sign-In:</strong> We receive your name, email address, and profile photo from Google. 
+                This information is used solely to identify your account and is not shared with any third parties.</li>
+            <li><strong>Email &amp; Password:</strong> Your email address is used solely for authentication purposes. 
+                Your password is securely handled by Firebase Authentication and is never visible to us.</li>
         </ul>
         
-        <h2>4. Third-Party Services</h2>
+        <h2>5. Data Storage</h2>
         <p>
-            TrackMotion does <strong>not</strong> use any third-party services that collect user data. Specifically, we do not use:
+            <strong>Local storage:</strong> All app data is stored using your device's local storage system by default. 
+            We cannot access, view, or retrieve locally stored data.
+        </p>
+        <p>
+            <strong>Cloud storage (if enabled):</strong> Your data is stored in Google Cloud Firestore, which is 
+            protected by industry-standard security measures. Data is encrypted in transit and at rest. Each user's 
+            data is isolated and accessible only through their authenticated account.
+        </p>
+        
+        <h2>6. Third-Party Services</h2>
+        <p>
+            TrackMotion uses the following third-party services <strong>only when you enable Cloud Sync</strong>:
         </p>
         <ul>
-            <li>Analytics services (such as Google Analytics or Firebase Analytics)</li>
-            <li>Advertising services (such as AdMob)</li>
-            <li>Crash reporting services</li>
-            <li>Cloud storage or sync services</li>
+            <li><strong>Firebase Authentication</strong> (by Google) — for secure sign-in</li>
+            <li><strong>Cloud Firestore</strong> (by Google) — for storing your synced data</li>
+            <li><strong>Google Sign-In</strong> (by Google) — as an optional sign-in method</li>
         </ul>
-        
-        <h2>5. Data Sharing</h2>
         <p>
-            Since we do not collect any data, we do not share any data with third parties. Your workout information 
-            and personal statistics stay exclusively on your device.
+            These services are governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. 
+            We do not use any analytics, advertising, or crash reporting services.
         </p>
         
-        <h2>6. Data Deletion</h2>
+        <h2>7. Data Sharing</h2>
         <p>
-            Because all data is stored locally on your device, you have complete control over your data:
+            We do not sell, trade, or share your data with third parties. Your workout information 
+            and personal statistics are accessible only to you, whether stored locally or in the cloud.
+        </p>
+        
+        <h2>8. Data Deletion</h2>
+        <p>
+            You have complete control over your data:
         </p>
         <ul>
-            <li><strong>To delete all app data:</strong> Simply uninstall the TrackMotion app from your device. This will permanently remove all data associated with the app.</li>
-            <li><strong>To delete specific data:</strong> Use the in-app options to clear workout history or reset settings.</li>
+            <li><strong>Local data:</strong> Uninstall the app to permanently remove all local data, or use the in-app options to clear workout history or reset settings.</li>
+            <li><strong>Cloud data:</strong> You can delete your cloud data from within the app's settings. Signing out will stop syncing but will not delete your cloud data. You can also request full account and data deletion by contacting us.</li>
         </ul>
         <p>
             If you have any questions about data deletion, please contact us at the email address provided below.
         </p>
         
-        <h2>7. Children's Privacy</h2>
+        <h2>9. Children's Privacy</h2>
         <p>
             TrackMotion does not knowingly collect any information from children under the age of 13. The app is 
             designed for general fitness tracking and does not require any personal information to function.
         </p>
         
-        <h2>8. Changes to This Privacy Policy</h2>
+        <h2>10. Changes to This Privacy Policy</h2>
         <p>
             We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an 
             updated "Last updated" date. We encourage you to review this Privacy Policy periodically for any changes.
         </p>
         
-        <h2>9. Contact Us</h2>
+        <h2>11. Contact Us</h2>
         <p>
             If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:
         </p>
         <div class="contact-box">
             <p><strong>Email:</strong> <a href="mailto:[your-email@example.com]">[your-email@example.com]</a></p>
-            <p><strong>Developer:</strong> Moritz Ramge</p>
+            <p><strong>Developer:</strong> [Your Name / Company Name]</p>
         </div>
         
-        <h2>10. Your Consent</h2>
+        <h2>12. Your Consent</h2>
         <p>
             By using TrackMotion, you consent to this Privacy Policy.
         </p>
     </div>
 </body>
 </html>
-
-
